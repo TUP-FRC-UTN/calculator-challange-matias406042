@@ -1,0 +1,19 @@
+
+<!-- el estilo lo hice inline con gpt por q estaba por cerrar la tarea lo voy a modificar despues del push -->
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+    <div style="border: 2px solid #ccc; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center;">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <input type="text" [(ngModel)]="n1" placeholder="Número 1" style="margin-bottom: 10px; width: 250px; height: 30px; font-size: 16px;">
+        <input type="text" [(ngModel)]="n2" placeholder="Número 2" style="margin-bottom: 10px; width: 250px; height: 30px; font-size: 16px;">
+      </div>
+      <p style="font-weight: bold; margin-bottom: 20px; font-size: 18px;">Resultado: {{respuesta}}</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <button (click)="enviarOperador('-')" style="margin: 5px; width: 60px; height: 40px; font-size: 18px;">-</button>
+        <button (click)="enviarOperador('+')" style="margin: 5px; width: 60px; height: 40px; font-size: 18px;">+</button>
+        <button (click)="enviarOperador('/')" style="margin: 5px; width: 60px; height: 40px; font-size: 18px;">/</button>
+        <button (click)="enviarOperador('*')" style="margin: 5px; width: 60px; height: 40px; font-size: 18px;">*</button>
+        <button (click)="enviarOperador('raiz')" style="margin: 5px; width: 60px; height: 40px; font-size: 18px;">√</button>
+        <button (click)="enviarOperador('potencia')" style="margin: 5px; width: 60px; height: 40px; font-size: 18px;">^</button>
+      </div>
+    </div>
+  </div>
